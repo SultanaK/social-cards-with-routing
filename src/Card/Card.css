@@ -1,0 +1,16 @@
+.card {
+    width: 300px;
+    background: white;
+    overflow: hidden;
+    color: black;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    float: left;
+    margin: 1rem;
+} 
+
+.card-content {
+    padding: 1rem;
+    padding-top: 0;
+}
