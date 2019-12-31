@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import CardList from './CardList/CardList'
+import Profile from './Profile/Profile'
 
 
 function App() {
