@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         <h1>Social Media App!!!!!</h1>
       </header>
-      <CardList />
+      <CardList />      
       <footer>
         <span>Copyright 2019</span>
       </footer>

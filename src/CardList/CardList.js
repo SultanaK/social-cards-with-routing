@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card'
 
-
 class CardList extends React.Component {
 
   state = {
