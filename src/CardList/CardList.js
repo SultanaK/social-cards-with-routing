@@ -69,7 +69,7 @@ class CardList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='CardList'>
           {this.state.cards.map((card)=>{
               return (
                   <Card
