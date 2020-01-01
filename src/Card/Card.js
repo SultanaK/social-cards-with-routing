@@ -1,5 +1,6 @@
 import React from 'react'
 import './Card.css';
+import { Link } from 'react-router-dom'
 
 function Card(props) {
 
@@ -15,10 +16,11 @@ function Card(props) {
                 </p>
                 <button onClick={() => props.handleClick(props.id)} style={{background: "white", border: "1px solid black"}}>LIKE!!!</button>
                 <br />
-                <button onClick={() => props.handleDelete(props.id)} style={{background: "white", border: "1px solid red"}}>DELETE :(</button>
+                <Link to={`/profile/${props.id}`}>View More</Link>
                 <br />
                 <p>Likes: {props.likes}</p>
                 <br />
+
                 {props.description}            
             </div>
         </section>

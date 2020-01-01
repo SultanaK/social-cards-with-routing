@@ -3,7 +3,14 @@ import './Profile.css'
 
 
 class Profile extends React.Component {
+
+  deleteAndGoBack = () => {
+    this.props.deleteCard(this.props.id)
+    this.props.history.push('/')
+  }
+  
   render() {
+
     return(
       <div className="profile">
         <img src={this.props.imageUrl} alt="profile pic" />
@@ -14,7 +21,11 @@ class Profile extends React.Component {
         <p>
           <strong>Likes: {this.props.likes}</strong>
         </p>
-        <button className="deleteButton">Delete :(</button>
+        <button 
+          onClick={this.deleteAndGoBack} 
+          className="deleteButton" >
+          Delete :(
+        </button>
       </div>
     )
   }
